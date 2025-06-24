@@ -176,14 +176,15 @@ class Explosion:
 
 
 def main():
-    score = Score()  # Scoreインスタンス
-    beams = []
-    explosion = []
+    
     pg.display.set_caption("たたかえ！こうかとん")
     screen = pg.display.set_mode((WIDTH, HEIGHT))    
     bg_img = pg.image.load("fig/pg_bg.jpg")
     bird = Bird((300, 200))
     bomb = Bomb((255, 0, 0), 10)
+    score = Score()  # Scoreインスタンス
+    beams = []
+    explosion = []
 
     # bomb = Bomb((255, 0, 0), 10)
     # bombs = []  # 爆弾用の空のリスト
